@@ -9,7 +9,19 @@
     header { background: #2c3e50; color: #fff; padding: 10px 0; text-align: center; }
     nav a { color: #fff; margin: 0 15px; text-decoration: none; }
     nav a:hover { text-decoration: underline; }
-    main { max-width: 800px; margin: auto; padding: 20px; }
+    main { max-width: 800px; margin: auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
+    pre {
+      background: #eee;
+      padding: 15px;
+      overflow-x: auto;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    section { margin-bottom: 25px; }
   </style>
 </head>
 <body>
@@ -24,7 +36,65 @@
   </header>
   <main>
     <h2>Page 2 – ਮੁੱਖ ਟੈਗਾਂ</h2>
-    <p>Here you can write about main HTML tags later.</p>
+
+    <section>
+      <h3>1. ਸਿਰਲੇਖ (Headings)</h3>
+      <p>ਸਿਰਲੇਖ 6 ਸਤਰਾਂ ਵਿੱਚ ਵਰਗੀਕ੍ਰਿਤ ਹੁੰਦੇ ਹਨ, ਜਿਵੇਂ ਕਿ &lt;h1&gt; ਸਭ ਤੋਂ ਵੱਡਾ ਹੈ ਅਤੇ &lt;h6&gt; ਸਭ ਤੋਂ ਛੋਟਾ।</p>
+      <pre>
+&lt;h1&gt;ਇਹ ਸਭ ਤੋਂ ਵੱਡਾ ਸਿਰਲੇਖ ਹੈ&lt;/h1&gt;
+&lt;h2&gt;ਇਹ ਦੂਜਾ ਸਿਰਲੇਖ ਹੈ&lt;/h2&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h3>2. ਪੈਰਾਗ੍ਰਾਫ (Paragraph)</h3>
+      <p>ਪੈਰਾਗ੍ਰਾਫ ਟੈਕਸਟ ਦਿਖਾਉਣ ਲਈ &lt;p&gt; ਟੈਗ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</p>
+      <pre>
+&lt;p&gt;ਇਹ ਇੱਕ ਪੈਰਾਗ੍ਰਾਫ ਹੈ ਜੋ ਤੁਹਾਡੇ ਟੈਕਸਟ ਨੂੰ ਦਿਖਾਉਂਦਾ ਹੈ।&lt;/p&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h3>3. ਚਿੱਤਰ (Image)</h3>
+      <p>ਵੈੱਬ ਪੇਜ ਵਿੱਚ ਚਿੱਤਰ ਜੋੜਣ ਲਈ &lt;img&gt; ਟੈਗ ਵਰਤਦੇ ਹਾਂ, ਜਿਸ ਵਿੱਚ src ਅਤੇ alt ਗੁਣ ਹੁੰਦੇ ਹਨ।</p>
+      <pre>
+&lt;img src="chitra.jpg" alt="ਇਹ ਇੱਕ ਚਿੱਤਰ ਹੈ"&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h3>4. ਲਿੰਕ (Links)</h3>
+      <p>ਹੋਰ ਪੰਨਾ ਜਾਂ ਵੈੱਬਸਾਈਟ ਨਾਲ ਜੁੜਨ ਲਈ &lt;a&gt; ਟੈਗ ਵਰਤਦੇ ਹਨ।</p>
+      <pre>
+&lt;a href="https://www.example.com"&gt;ਇਸ ਲਿੰਕ 'ਤੇ ਕਲਿੱਕ ਕਰੋ&lt;/a&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h3>5. ਸੂਚੀ (Lists)</h3>
+      <p>ਕਿਸੇ ਵੀ ਆਈਟਮ ਦੀ ਸੂਚੀ ਬਣਾਉਣ ਲਈ &lt;ul&gt; (unordered list) ਜਾਂ &lt;ol&gt; (ordered list) ਅਤੇ &lt;li&gt; (list item) ਵਰਤਦੇ ਹਨ।</p>
+      <pre>
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+    </section>
+
+    <section>
+      <h3>6. ਡਿਵਿਜ਼ਨ (Division)</h3>
+      <p>ਪੰਨੇ ਦੇ ਹਿੱਸਿਆਂ ਨੂੰ ਵੱਖ-ਵੱਖ ਕਰਨ ਲਈ &lt;div&gt; ਟੈਗ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।</p>
+      <pre>
+&lt;div&gt;
+  ਇਹ ਇੱਕ ਵੱਖਰਾ ਖੇਤਰ ਹੈ ਜਿਸ ਵਿੱਚ ਤੁਸੀਂ ਵੱਖਰੀ ਚੀਜ਼ ਰੱਖ ਸਕਦੇ ਹੋ।
+&lt;/div&gt;
+      </pre>
+    </section>
+
+    <p><strong>ਸੰਖੇਪ:</strong> ਇਹ ਮੁੱਖ ਟੈਗ HTML ਵਿੱਚ ਵੈੱਬ ਪੇਜ ਬਣਾਉਣ ਲਈ ਬਹੁਤ ਜ਼ਰੂਰੀ ਹਨ। ਇਨ੍ਹਾਂ ਨਾਲ ਤੁਸੀਂ ਸਿਰਲੇਖ, ਪੈਰਾਗ੍ਰਾਫ, ਚਿੱਤਰ, ਲਿੰਕ, ਸੂਚੀਆਂ ਅਤੇ ਪੰਨੇ ਦੇ ਖੇਤਰ ਬਣਾਉਂਦੇ ਹੋ।</p>
+
   </main>
 </body>
 </html>
+
